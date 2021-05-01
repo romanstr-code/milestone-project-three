@@ -45,6 +45,18 @@
          <li><a href="#">About Us</a></li>
          <li><a href="#">Contact Us</a></li>
       </ul>
+      <!-- Flash messages -->
+    <section>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="row flashes">
+                        <h4 class="light-blue lighten-4 center-align">{{ message }}</h4>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}                
+    </section>
 
        <!--templates-->
       <main class="container">
