@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- Full Screen Materialize division -->
+<div class="slider fullscreen">
+    <ul class="slides">
+        <li>
+            <!--  Image -->
+            <img src="{{ url_for('static', filename='images/home.jpg') }}">
+            <div class="caption center-align">
+                <h3>Ready for journey?</h3>
+                <h5 class="light grey-text text-lighten-3">Then Register!</h5>
+                <!-- Card action -->
+                <div class="card-action center">
+                    <!-- LogIn/Register buttons -->
+                    <a href="#" class="white-text  darken-3 waves-effect waves-light btn z-depth-3">Log In</a>
+                    <a href="#" class="white-text  darken-3 waves-effect waves-light btn">Register</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <!--  Image -->
+            <img src="{{ url_for('static', filename='images/home1.jpg') }}">
+            <div class="caption right-align">
+                <h3>Already registered with us?</h3>
+                <h5 class="light grey-text text-lighten-3">Then hit Log In.</h5>
+                <!-- Card action -->
+                <div class="card-action right">
+                    <!-- LogIn/Register buttons -->
+                    <a href="#" class="white-text  darken-3 waves-effect waves-light btn z-depth-3">Log In</a>
+                    <a href="#" class="white-text  darken-3 waves-effect waves-light btn">Register</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <!--  Image -->
+            <img src="{{ url_for('static', filename='images/home2.jpg') }}">
+            <div class="caption right-align">
+                <h3>Iced coffee ?</h3>
+                <h5 class="light grey-text text-lighten-3">Best recipie awaits.</h5>
+                <!-- Card action -->
+                <div class="card-action right">
+                    <!-- LogIn/Register buttons -->
+                    <a href="#" class="white-text  darken-3 waves-effect waves-light btn z-depth-3">Log In</a>
+                    <a href="#" class="white-text  darken-3 waves-effect waves-light btn">Register</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <!--  Image -->
+            <img src="{{ url_for('static', filename='images/home3.jpg') }}">
+            <div class="caption left-align">
+                <h3>Aeropress Experience !</h3>
+                <h5 class="light grey-text text-lighten-3">Hit the Register button!</h5>
+                <!-- Card action -->
+                <div class="card-action left">
+                    <!-- LogIn/Register buttons -->
+                    <a href="#" class="white-text  darken-3 waves-effect waves-light btn z-depth-3">Log In</a>
+                    <a href="#" class="white-text  darken-3 waves-effect waves-light btn">Register</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!-- /Full Screen Materialize division  -->
+
+
+{% endblock %}
