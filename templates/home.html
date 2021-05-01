@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <!-- Full Screen Materialize division -->
-<div class="slider fullscreen">
+<div class="slider ">
     <ul class="slides">
         <li>
             <!--  Image -->
@@ -12,7 +12,7 @@
                 <!-- Card action -->
                 <div class="card-action center">
                     <!-- LogIn/Register buttons -->
-                    <a href="#" class="white-text  darken-3 waves-effect waves-light btn z-depth-3">Log In</a>
+                    <a href="{{ url_for('recipes') }}" class="white-text  darken-3 waves-effect waves-light btn z-depth-3">Log In</a>
                     <a href="#" class="white-text  darken-3 waves-effect waves-light btn">Register</a>
                 </div>
             </div>
