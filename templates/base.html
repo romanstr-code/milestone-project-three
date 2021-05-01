@@ -22,7 +22,7 @@
                <li><a href="#" class="nav-item">Profile</a></li>
                <li><a href="#" class="nav-item">Log Out</a></li>
                
-               <li><a href="#" class="nav-item">Log In</a></li>
+               <li><a href="{{ url_for('login') }}" class="nav-item">Log In</a></li>
                <li><a href="{{ url_for('register') }}" class="nav-item">Register</a></li>
                
                <li><a href="#" class="nav-item">About Us</a></li>
@@ -39,7 +39,7 @@
          <li><a href="#">Profile</a></li>
          <li><a href="#">Log Out</a></li>
          
-         <li><a href="#">Log In</a></li>
+         <li><a href="{{ url_for('login') }}">Log In</a></li>
          <li><a href="{{ url_for('register') }}">Register</a></li>
          
          <li><a href="#">About Us</a></li>
