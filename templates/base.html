@@ -6,8 +6,19 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
          integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" type="text/css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="#" />
       <title>Coffee Show</title>
+
+      <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#!">one</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">two</a></li>
+            <li><a href="#!">three</a></li>
+            <li><a href="#!">four</a></li>
+            <li><a href="#!">five</a></li>
+        </ul>
 
  <!--nav bar-->
       <nav>
@@ -17,7 +28,7 @@
             <ul class="right hide-on-med-and-down">
                <li><a href="{{ url_for('home') }}" class="nav-item">Home</a></li>
                {% if session.user %}
-                    <li><a href="{{ url_for('recipes') }}" class="nav-item">Recipes</a></li>
+                    <li><a class='dropdown-trigger nav-item' href='#' data-target='dropdown1'>Recipes <i class="fas fa-angle-down right"></i></a></li>
                     <li><a href="#" class="nav-item">Add Coffee Recipe</a></li>
                     <li><a href="{{ url_for('profile', username=session['user']) }}" class="nav-item">Profile</a></li>
                     <li><a href="{{ url_for('logout') }}" class="nav-item">Log Out</a></li>
@@ -30,11 +41,20 @@
             </ul>
          </div>
       </nav>
+      <!-- Dropdown Structure For Mobile -->
+        <ul id='dropdown2' class='dropdown-content'>
+            <li><a href="#!">one</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">two</a></li>
+            <li><a href="#!">three</a></li>
+            <li><a href="#!">four</a></li>
+            <li><a href="#!">five</a></li>
+        </ul>
       <!--mobile nav bar-->
       <ul class="sidenav" id="mobile-demo">
                     <li><a href="#">Home</a></li>
          {% if session.user %}
-                    <li><a href="{{ url_for('recipes') }}" class="nav-item">Recipes</a></li>
+                    <li><a href="{{ url_for('recipes') }}" class="nav-item dropdown-trigger tooltipped" data-position="left" data-tooltip="Check Recipes" data-target="dropdown2">Recipes</a></li>
                     <li><a href="#" class="nav-item">Add Coffee Recipe</a></li>
                     <li><a href="{{ url_for('profile', username=session['user']) }}" class="nav-item">Profile</a></li>
                     <li><a href="{{ url_for('logout') }}" class="nav-item">Log Out</a></li>
