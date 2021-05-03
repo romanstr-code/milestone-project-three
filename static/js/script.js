@@ -7,4 +7,5 @@ $(document).ready(function(){
     $('.slider').slider();
     // Tool Tip
     $('.tooltipped').tooltip();
+     $('.modal').modal();
   });

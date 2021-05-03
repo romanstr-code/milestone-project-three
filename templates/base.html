@@ -14,10 +14,12 @@
         <ul id='dropdown1' class='dropdown-content'>
             <li><a href="{{ url_for('recipes') }}">All Recipes</a></li>
             <li class="divider"></li>
-            <li><a href="#!">two</a></li>
-            <li><a href="#!">three</a></li>
-            <li><a href="#!">four</a></li>
-            <li><a href="#!">five</a></li>
+            <li><a href="#!">French Press</a></li>
+            <li><a href="#!">Siphon</a></li>
+            <li><a href="#!">Turkish</a></li>
+            <li><a href="#!">Pour Over</a></li>
+            <li><a href="#!">Aeropress</a></li>
+            <li><a href="#!">Iced Coffe</a></li>
         </ul>
 
  <!--nav bar-->
@@ -28,7 +30,7 @@
             <ul class="right hide-on-med-and-down">
                <li><a href="{{ url_for('home') }}" class="nav-item">Home</a></li>
                {% if session.user %}
-                    <li><a class='dropdown-trigger nav-item' href='#' data-target='dropdown1'>Recipes <i class="fas fa-angle-down right"></i></a></li>
+                    <li><a class='dropdown-trigger nav-item' href="{{ url_for('recipes') }}" data-target='dropdown1'>Recipes <i class="fas fa-angle-down right"></i></a></li>
                     <li><a href="{{ url_for('add_recipe') }}" class="nav-item">Add Coffee Recipe</a></li>
                     <li><a href="{{ url_for('profile', username=session['user']) }}" class="nav-item">Profile</a></li>
                     <li><a href="{{ url_for('logout') }}" class="nav-item">Log Out</a></li>
@@ -43,12 +45,14 @@
       </nav>
       <!-- Dropdown Structure For Mobile -->
         <ul id='dropdown2' class='dropdown-content'>
-            <li><a href="#!">one</a></li>
+            <li><a href="{{ url_for('recipes') }}">All Recipes</a></li>
             <li class="divider"></li>
-            <li><a href="#!">two</a></li>
-            <li><a href="#!">three</a></li>
-            <li><a href="#!">four</a></li>
-            <li><a href="#!">five</a></li>
+            <li><a href="#!">French Press</a></li>
+            <li><a href="#!">Siphon</a></li>
+            <li><a href="#!">Turkish</a></li>
+            <li><a href="#!">Pour Over</a></li>
+            <li><a href="#!">Aeropress</a></li>
+            <li><a href="#!">Iced Coffe</a></li>
         </ul>
       <!--mobile nav bar-->
       <ul class="sidenav" id="mobile-demo">

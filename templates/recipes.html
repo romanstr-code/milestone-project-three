@@ -1,65 +1,65 @@
 {% extends "base.html" %}
 {% block content %}
 
-
-
-<!--Coffee Recipes-->
+<!-- Coffee Recipes -->
 {% if recipes|length > 0 %}
 <div class="row">
-   {% for recipes in recipes %}
-   <div class="col s12 m6 l4">
-      <div class="card recipe-card">
-         <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="{{ recipes.url }}" alt="recipes">
-         </div>
-         <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4 center-align text">
-            <strong>{{ recipes.recipe_name }}</strong>
-            </span>
-            <p class="center-align text">Click the image!</p>
-            <br>
-            {% if session.user|lower == recipes.created_by|lower %}
-            <a href="{{ url_for('edit_recipe', recipes_id=recipes._id ) }}" class="btn-small green waves-effect waves-light">
-            <i class="fas fa-pencil-alt"></i>
-            </a>
-            <a class="btn-small red modal-trigger right" href="#modal-{{recipes._id}}">
-            <i class="far fa-trash-alt"></i>
-            </a>
-            {% endif %}
-            <!--modal to check before deleting an item-->
-            <div id="modal-{{recipes._id}}" class="modal">
-               <div class="modal-content">
-                  <h5 class="text center-align">Are you sure you want to delete?</h5>
-               </div>
-               <div class="modal-footer">
-                  <a href="{{ url_for('recipes', username=session['user']) }}" class="btn-small white-text grey darken-3 waves-effect waves-light">Cancel</a>
-                  <a href="#" class="btn-small white-text grey darken-3 waves-effect waves-light">Delete</a>
-               </div>
+    {% for recipes in recipes %}
+    <div class="col s12 m6 l4">
+        <div class="card recipe-card">
+            <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="{{ recipes.url }}" alt="recipes">
             </div>
-         </div>
-         <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4"><strong>{{ recipes.recipe_name }}</strong>
-            <i class="fas fa-times right"></i>
-            </span>
-            <strong>Ingredients:</strong>
-            <br>
-            {{ recipes.ingridients }}
-            <br>
-            <strong>Method:</strong>
-            <br>
-            {{ recipes.method }}
-            <p><em>by: {{ recipes.created_by }}</em></p>
-         </div>
-      </div>
-   </div>
-   {% endfor %}
+            <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4 center-align text">
+                    <strong>{{ recipes.recipe_name }}</strong>
+                </span>
+                <p class="center-align text">Click image!</p>
+                <br>
+                 {% if session.user|lower == recipes.created_by|lower %}
+                <a href="{{ url_for('edit_recipe', recipes_id=recipes._id ) }}"
+                    class="btn-small green waves-effect waves-light">
+                    <i class="fas fa-pencil-alt"></i>
+                </a>
+                <a class="btn-small red modal-trigger right" href="#modal-{{recipes._id}}"><i
+                        class="far fa-trash-alt"></i></a>
+                </a>
+                {% endif %}
+                <!-- Check before delete Message -->
+                <div id="modal-{{recipes._id}}" class="modal">
+                    <div class="modal-content">
+                        <h5 class="text center-align">Delete permanently?</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="{{ url_for('recipes', username=session['user']) }}"
+                            class="btn-small white-text grey darken-3 waves-effect waves-light">Cancel</a>
+                        <a href="{{ url_for('delete_recipe', recipes_id=recipes._id ) }}"
+                            class="btn-small white-text grey darken-3 waves-effect waves-light">Delete</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><strong>{{ recipes.recipe_name }}</strong>
+                    <i class="fas fa-times right"></i>
+                </span>
+                <strong>Ingredients:</strong>
+                <br>
+                {{ recipes.ingridients }}
+                <br>
+                <strong>Method:</strong>
+                <br>
+                {{ recipes.method }}
+                <p><em>by: {{ recipes.created_by }}</em></p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
 </div>
 {% else %}
-<h3 class="center-align red-text text">No Coffee Recipe Found!</h3>
+<h3 class="center-align red-text text">No Recipe Found!</h3>
 {% if session.user %}
-<h5 class="center-align text">Add Your Own Recipe!</h5>
+<h5 class="center-align text"> Create Recipe</h5>
 {% endif %}
 {% endif %}
-
 
 {% endblock %}
