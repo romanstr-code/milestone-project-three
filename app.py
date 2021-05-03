@@ -107,6 +107,26 @@ def logout():
     return redirect("login")
 
 
+@app.route("/add_recipe", methods=["GET", "POST"])
+def add_recipe():
+    # Send User Input to DB
+    if request.method == "POST":
+        recipes = {
+            "url": request.form.get("url"),
+            "category_name": request.form.get("category_name"),
+            "recipe_name": request.form.get("recipe_name"),
+            "ingridients": request.form.get("ingridients"),
+            "method": request.form.get("method"),
+            "created_by": session["user"]
+        }
+        # Post the User Input to MDB
+        mongo.db.recipes.insert_one(recipes)
+        flash("Thank You for your Recipe!")
+        return redirect(url_for("recipes"))
+
+    return render_template("add_recipe.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
