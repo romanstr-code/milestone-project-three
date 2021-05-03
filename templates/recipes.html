@@ -19,7 +19,7 @@
             <p class="center-align text">Click the image!</p>
             <br>
             {% if session.user|lower == recipes.created_by|lower %}
-            <a href="#" class="btn-small green waves-effect waves-light">
+            <a href="{{ url_for('edit_recipe', recipes_id=recipes._id ) }}" class="btn-small green waves-effect waves-light">
             <i class="fas fa-pencil-alt"></i>
             </a>
             <a class="btn-small red modal-trigger right" href="#modal-{{recipes._id}}">
