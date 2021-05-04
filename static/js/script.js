@@ -3,9 +3,14 @@ $(document).ready(function(){
      $('.sidenav').sidenav({edge: "right"});
      // DropDown button
      $('.dropdown-trigger').dropdown();
-    // Full page slider // Home Page
-    $('.slider').slider();
     // Tool Tip
     $('.tooltipped').tooltip();
+    // Delete recipe modal // Recipe Page
      $('.modal').modal();
+     // Paralax Home page
+     $('.parallax').parallax();
+     // Carousel Home page
+     $('.carousel').carousel();
+     // Slider Home Page
+     $('.slider').slider();
   });
