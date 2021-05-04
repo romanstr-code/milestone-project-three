@@ -3,6 +3,7 @@
 
 <!-- Coffee Recipes -->
 {% if recipes|length > 0 %}
+<div class="container">
 <div class="row">
     {% for recipes in recipes %}
     <div class="col s12 m6 l4">
@@ -54,6 +55,7 @@
         </div>
     </div>
     {% endfor %}
+</div>
 </div>
 {% else %}
 <h3 class="center-align red-text text">No Recipe Found!</h3>
