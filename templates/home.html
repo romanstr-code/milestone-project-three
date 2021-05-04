@@ -1,73 +1,103 @@
 {% extends "base.html" %}
 {% block content %}
-<!-- Full Screen Materialize division -->
+
+<!-- landing page -->
+<div class="parallax-container">
+    <h1 class="center-align white-text text-darken-2">
+        Univers of Coffee Lovers!
+    </h1>
+    <div class="center-align">
+        <a href="{{ url_for('login') }}" class="waves-effect waves-light btn-large z-depth-5">Log In</a>
+    </div>
+    <div class="parallax">
+        <img src="{{ url_for('static', filename='images/home_page.jpg') }}">
+    </div>
+</div>
+<!-- Register Section / Recipes foto div -->
 <section>
-    <div class="row">
-        <div class="col s12">
-<div class="slider">
-    <ul class="slides">
-        <li>
-            <!--  Image -->
-            <img src="{{ url_for('static', filename='images/home.jpg') }}">
-            <div class="caption center-align">
-                <h3>Ready for journey?</h3>
-                <h5 class="light grey-text text-lighten-3">Then Register!</h5>
-                <!-- Card action -->
-                <div class="card-action center">
-                    <!-- LogIn/Register buttons -->
-                    <a href="{{ url_for('login') }}" class="white-text  darken-3 waves-effect waves-light btn z-depth-3">Log In</a>
-                    <a href="{{ url_for('register') }}" class="white-text  darken-3 waves-effect waves-light btn">Register</a>
-                </div>
+    <div class="section deep-orange lighten-4">
+        <div class="row container">
+            <h2 class="header center-align grey-text text-darken-3 lighten-3">Register for Our best recipes!</h2>
+            <h4 class="grey-text text-darken-3 lighten-3 ">You can see how one of our best coffee recipes are looking
+                from
+                this amazing pictures. Welcome and enjoy your eyes first,and after we gonna show you step by
+                step how to make this recipes.</h4>
+        </div>
+        <div class="row">
+            <div class="center-align">
+                <a href="{{ url_for('register') }}" class="waves-effect waves-light btn-large z-depth-5">Register</a>
             </div>
-        </li>
-        <li>
-            <!--  Image -->
-            <img src="{{ url_for('static', filename='images/home1.jpg') }}">
-            <div class="caption right-align">
-                <h3>Already registered with us?</h3>
-                <h5 class="light grey-text text-lighten-3">Then hit Log In.</h5>
-                <!-- Card action -->
-                <div class="card-action right">
-                    <!-- LogIn/Register buttons -->
-                    <a href="{{ url_for('login') }}" class="white-text  darken-3 waves-effect waves-light btn z-depth-3">Log In</a>
-                    <a href="{{ url_for('register') }}" class="white-text  darken-3 waves-effect waves-light btn">Register</a>
-                </div>
-            </div>
-        </li>
-        <li>
-            <!--  Image -->
-            <img src="{{ url_for('static', filename='images/home2.jpg') }}">
-            <div class="caption right-align">
-                <h3>Iced coffee ?</h3>
-                <h5 class="light grey-text text-lighten-3">Best recipie awaits.</h5>
-                <!-- Card action -->
-                <div class="card-action right">
-                    <!-- LogIn/Register buttons -->
-                    <a href="{{ url_for('login') }}" class="white-text  darken-3 waves-effect waves-light btn z-depth-3">Log In</a>
-                    <a href="{{ url_for('register') }}" class="white-text  darken-3 waves-effect waves-light btn">Register</a>
-                </div>
-            </div>
-        </li>
-        <li>
-            <!--  Image -->
-            <img src="{{ url_for('static', filename='images/home3.jpg') }}">
-            <div class="caption left-align">
-                <h3>Aeropress Experience !</h3>
-                <h5 class="light grey-text text-lighten-3">Hit the Register button!</h5>
-                <!-- Card action -->
-                <div class="card-action left">
-                    <!-- LogIn/Register buttons -->
-                    <a href="{{ url_for('login') }}" class="white-text  darken-3 waves-effect waves-light btn z-depth-3">Log In</a>
-                    <a href="{{ url_for('register') }}" class="white-text  darken-3 waves-effect waves-light btn">Register</a>
-                </div>
-            </div>
-        </li>
-    </ul>
-</div>
-</div>
+        </div>
+        <!-- Carousel/ Display Best Products -->
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="{{ url_for('static', filename='images/taste1.jpg') }}"
+                    height="180"></a>
+            <a class="carousel-item" href="#two!"><img src="{{ url_for('static', filename='images/taste2.jpg') }}"
+                    height="180"></a>
+            <a class="carousel-item" href="#three!"><img src="{{ url_for('static', filename='images/taste3.jpg') }}"
+                    height="180"></a>
+            <a class="carousel-item" href="#four!"><img src="{{ url_for('static', filename='images/taste4.jpg') }}"
+                    height="180"></a>
+            <a class="carousel-item" href="#five!"><img src="{{ url_for('static', filename='images/taste5.jpg') }}"
+                    height="180"></a>
+        </div>
     </div>
 </section>
-<!-- /Full Screen Materialize division  -->
-
-
+<!-- Section with more pictures/ information  -->
+<section>
+    <div class="col">
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <!--  image -->
+                    <img src="{{ url_for('static', filename='images/home.jpg') }}">
+                    <div class="caption left-align">
+                        <h3>Homemade black Coffee!</h3>
+                        <h5 class="light grey-text text-lighten-3">Our Best Recipes!</h5>
+                    </div>
+                </li>
+                <li>
+                    <!--  image -->
+                    <img src="{{ url_for('static', filename='images/home1.jpg') }}">
+                    <div class="caption right-align">
+                        <h3>You Say French Press?</h3>
+                        <h5 class="light grey-text text-lighten-3">We will show you French press!</h5>
+                    </div>
+                </li>
+                <li>
+                    <!--  image -->
+                    <img src="{{ url_for('static', filename='images/home2.jpg') }}">
+                    <div class="caption right-align">
+                        <h3>Iced Coffee !</h3>
+                        <h5 class="light grey-text text-lighten-3"> Our Best Iced Coffee Recipe!</h5>
+                    </div>
+                </li>
+                <li>
+                    <!--  image -->
+                    <img src="{{ url_for('static', filename='images/home3.jpg') }}">
+                    <div class="caption center-align">
+                        <h3>Aeropress Coffee</h3>
+                        <h5 class="light grey-text text-lighten-3">Easy. Fast. Tasty.</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- / End Section with more pictures/ information /-->
+<!-- Last Section of the page -->
+<section>
+    <div class="parallax-container">
+        <h2 class="center-align white-text text-darken-2">
+            Want to see more? Register!
+        </h2>
+        <div class="center-align">
+            <a class="waves-effect waves-light btn-large z-depth-5" href="{{ url_for('login') }}">Log In</a>
+        </div>
+        <div class="parallax">
+            <img src="{{ url_for('static', filename='images/home_page.jpg') }}">
+        </div>
+    </div>
+</section>
+<!-- End Last Section of the page -->
 {% endblock %}
