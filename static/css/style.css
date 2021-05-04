@@ -1,0 +1,13 @@
+/* BODY */
+html,body{
+    font-family: 'Nunito', sans-serif;
+    height: 100vh;
+}
+
+/*. HOME PAGE  .*/
+
+/* Paralax Container */
+.parallax-container{
+    height: 500px;
+
+    }
