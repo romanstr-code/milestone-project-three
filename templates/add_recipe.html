@@ -1,24 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
 
+<!-- Page Section -->
+<section class="background-color-recipes">
+
+
+
 <h1 class="center-align">Coffee is Life</h1>
 
 <div class="container">
-<div class="row card-panel white z-depth-4">
-   <h2 class="center-align">Add Your Recipe</h2>
+<div class="row card-panel  brown lighten-4 z-depth-4">
+   <h2 class="center-align white-text">Add Your Recipe</h2>
    <form class="col s12" method="POST" action="{{ url_for('add_recipe') }}">
       <!--Recipe Image Url -->
       <div class="row">
-         <div class="input-field col s11">
+         <div class="input-field col s12">
             <i class="fas fa-images prefix"></i>
             <textarea id="url" name="url" class="materialize-textarea validate" required></textarea>
-            <label for="url">Image Url</label>
-         </div>
-         <div class="col-1">
-            <a class="btn tooltipped black-text grey lighten-4 right" data-position="left" 
-               data-tooltip="Add url address!">
-            <i class="fas fa-info-circle"></i>
-            </a>
+            <label for="url" class="white-text">Image Url</label>
          </div>
       </div>
       <!-- Category Name -->
@@ -27,7 +26,7 @@
             <i class="fa fa-tag prefix"></i>
             <textarea id="category_name" name="category_name" minlength="5" maxlength="15" 
                class="materialize-textarea validate" required></textarea>
-            <label for="category_name">Category Name</label>
+            <label for="category_name" class="white-text">Category Name</label>
          </div>
       </div>
       <!--Name of Recipe -->
@@ -36,7 +35,7 @@
             <i class="fas fa-mug-hot prefix"></i>
             <textarea id="recipe_name" name="recipe_name" minlength="5" maxlength="15" 
                class="materialize-textarea validate" required></textarea>
-            <label for="recipe_name">Recipe Name</label>
+            <label for="recipe_name" class="white-text">Recipe Name</label>
          </div>
       </div>
       <!-- Recipe Ingredients -->
@@ -44,7 +43,7 @@
          <div class="input-field col s12">
             <i class="fas fa-list prefix"></i>
             <textarea id="ingridients" name="ingridients" class="materialize-textarea validate" required></textarea>
-            <label for="ingridients">Ingredients</label>
+            <label for="ingridients" class="white-text">Ingredients</label>
          </div>
       </div>
       <!-- Recipe Method -->
@@ -52,17 +51,17 @@
          <div class="input-field col s12">
             <i class="fas fa-coffee prefix"></i>
             <textarea id="method" name="method" class="materialize-textarea validate" required></textarea>
-            <label for="method">Method</label>
+            <label for="method" class="white-text">Method</label>
          </div>
       </div>
       <!-- Submit Button -->
       <div class="row">
          <div class="col s12 center-align">
-            <a href="{{ url_for('recipes') }}" class="btn waves-effect waves-light grey darken-3">
+            <a href="{{ url_for('recipes') }}" class="btn waves-effect waves-light"  class="white-text">
             Cancel
             <i class="fas fa-times right"></i>
             </a>
-            <button class="btn waves-effect waves-light grey darken-3" type="submit">Add New Recipe
+            <button class="btn waves-effect waves-light tooltipped" data-position="top" data-tooltip="Yeeeeey! New Recipe Incoming!" class="white-text" type="submit">Add New Recipe
             <i class="fas fa-check"></i>
             </button>
          </div>
@@ -71,5 +70,5 @@
 </div>
 </div>
 
-
+</section>
 {% endblock %}
