@@ -1,17 +1,65 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="container">
-<div class="row">
-    <div class="col s12 m8 offset-m2">
-        <h3 class="center-align light-blue-text text-darken-4">
-           {{ username }}'s Profile
-        </h3>
+<!-- Profile Section / Content / Video /  -->
+<section class="background-profile">
+    <!-- Page Container -->
+    <div class="container">
+        <!-- Welcome User Division -->
+        <div class="row">
+            <div class="col s12 m8 offset-m2">
+                <h3 class="center-align white-text text-darken-4">
+                    Welcome {{ username|capitalize }} to coffee world!
+                </h3>
+            </div>
+        </div>
+        <!-- First Video Division  -->
+        <div class="row">
+            <div class="col s12 m12 ">
+                <h4 class="center-align white-text text-darken-4">Check for coffee technique!</h4>
+                <div class="video-container z-depth-5">
+                    <iframe width="853" height="480" src="{{ url_for('static', filename='video/profile_video.mp4') }}"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Button Division -->
+        <div class="row">
+            <div class="col s12 m8 ">
+                <div class="center-align">
+                    <a href="{{ url_for('recipes') }}"
+                        class="col s12 waves-effect waves-light btn-large z-depth-5 tooltipped" data-position="top"
+                        data-tooltip="Check for more Recipes">Recipes</a>
+                </div>
+            </div>
+        </div>
+        <!-- Second Video Division  -->
+        <div class="row">
+            <div class="col s12 m12 ">
+                <h4 class="center-align white-text text-darken-4">Manual Brewing Method!</h4>
+                <div class="video-container z-depth-5">
+                    <iframe width="853" height="480" src="{{ url_for('static', filename='video/video_profile2.mp4') }}"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Button Division -->
+        <div class="row">
+            <div class="col s12 m8 ">
+                <div class="center-align">
+                    <a href="{{ url_for('add_recipe') }}"
+                        class="col s12 waves-effect waves-light btn-large z-depth-5 tooltipped" data-position="top"
+                        data-tooltip="Add your Recipe!">Add Recipe!</a>
+                </div>
+            </div>
+        </div>
+        <!-- Last Division / Thank you message -->
+        <div class="row">
+            <div class="col s12 m8 offset-m2">
+                <h5 class="center-align white-text">Thank you for visiting us!</h5>
+            </div>
+        </div>
     </div>
-</div>
-</div>
-
-
-
+</section>
 
 {% endblock %}
