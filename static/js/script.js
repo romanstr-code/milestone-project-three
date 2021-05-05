@@ -13,4 +13,15 @@ $(document).ready(function(){
      $('.carousel').carousel();
      // Slider Home Page
      $('.slider').slider();
+     
+     // Scroll down on Recipes Page
+     $(".down").click(function() {
+     $('html, body').animate({
+         scrollTop: $(".up").offset().top
+     }, 2000);
+ });
+
+ 
   });
+
+  
