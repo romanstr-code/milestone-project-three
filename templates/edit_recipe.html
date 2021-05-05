@@ -1,69 +1,75 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1 class="center-align">Coffee is Life</h1>
-
-
-<div class="container">
-<div class="row card-panel">
-   <h2 class="center-align">Edit Recipe</h2>
-   <form class="col s12" method="POST" action="{{ url_for('edit_recipe', recipes_id=recipes._id) }}">
-     <!--Recipe Image Url -->
-      <div class="row">
-         <div class="input-field col s11">
-            <i class="fas fa-images prefix"></i>
-            <textarea id="url" name="url" class="materialize-textarea validate" required>{{ recipes.url }}</textarea>
-            <label for="url">Image Url</label>
-         </div>
-      </div>
-      <!-- Category Name -->
-      <div class="row">
-         <div class="input-field col s12">
-            <i class="fa fa-tag prefix"></i>
-            <textarea id="category_name" name="category_name" minlength="5" maxlenth="15"  
-               class="materialize-textarea validate" required>{{ recipes.category_name }}</textarea>
-            <label for="category_name">Category</label>
-         </div>
-      </div>
-      <!--Name of Recipe -->
-      <div class="row">
-         <div class="input-field col s12">
-            <i class="fas fa-mug-hot prefix"></i>
-            <textarea id="recipe_name" name="recipe_name" minlength="5" maxlength="15" 
-               class="materialize-textarea validate" required>{{ recipes.recipe_name }}</textarea>
-            <label for="recipe_name">Recipe Name</label>
-         </div>
-      </div>
-      <!-- Recipe Ingredients -->
-      <div class="row">
-         <div class="input-field col s12">
-            <i class="fas fa-list prefix"></i>
-            <textarea id="ingridients" name="ingridients" class="materialize-textarea validate" required>{{ recipes.ingridients }}</textarea>
-            <label for="ingridients">Ingredients</label>
-         </div>
-      </div>
-      <!-- Recipe Method -->
-      <div class="row">
-         <div class="input-field col s12">
-              <i class="fas fa-coffee prefix"></i>
-            <textarea id="method" name="method" class="materialize-textarea validate" required>{{ recipes.method }}</textarea>
-            <label for="method">Method</label>
-         </div>
-      </div>
-      <!-- Cancel/Edit Button -->
-      <div class="row">
-         <div class="col s12 center-align">
-            <a href="{{ url_for('recipes') }}" class="btn waves-effect waves-light grey darken-3 white text">
-            Cancel
-            <i class="fas fa-times right"></i>
-            </a>
-            <button class="btn waves-effect waves-light grey darken-3 white text" type="submit">Update Recipe
-            <i class="fas fa-edit"></i>
-            </button>
-         </div>
-      </div>
-   </form>
-</div>
-</div>
+<!-- Page Section -->
+<section class="background-color-edit_recipes">
+    <h1 class="center-align ">Coffee is Life</h1>
+    <!-- Page Container -->
+    <div class="container">
+        <div class="row card-panel brown lighten-4 z-depth-4">
+            <h2 class="center-align">Edit Recipe</h2>
+            <form class="col s12" method="POST" action="{{ url_for('edit_recipe', recipes_id=recipes._id) }}">
+                <!--Recipe Image Url -->
+                <div class="row">
+                    <div class="input-field col s11">
+                        <i class="fas fa-images prefix"></i>
+                        <textarea id="url" name="url" class="materialize-textarea validate"
+                            required>{{ recipes.url }}</textarea>
+                        <label for="url" class="white-text">Image Url</label>
+                    </div>
+                </div>
+                <!-- Category Name -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fa fa-tag prefix"></i>
+                        <textarea id="category_name" name="category_name" minlength="5" maxlenth="15"
+                            class="materialize-textarea validate" required>{{ recipes.category_name }}</textarea>
+                        <label for="category_name" class="white-text">Category</label>
+                    </div>
+                </div>
+                <!--Name of Recipe -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-mug-hot prefix"></i>
+                        <textarea id="recipe_name" name="recipe_name" minlength="5" maxlength="15"
+                            class="materialize-textarea validate" required>{{ recipes.recipe_name }}</textarea>
+                        <label for="recipe_name" class="white-text">Recipe Name</label>
+                    </div>
+                </div>
+                <!-- Recipe Ingredients -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-list prefix"></i>
+                        <textarea id="ingridients" name="ingridients" class="materialize-textarea validate"
+                            required>{{ recipes.ingridients }}</textarea>
+                        <label for="ingridients" class="white-text">Ingredients</label>
+                    </div>
+                </div>
+                <!-- Recipe Method -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-coffee prefix"></i>
+                        <textarea id="method" name="method" class="materialize-textarea validate"
+                            required>{{ recipes.method }}</textarea>
+                        <label for="method" class="white-text">Method</label>
+                    </div>
+                </div>
+                <!-- Cancel/Edit Button -->
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <a href="{{ url_for('recipes') }}" class="btn waves-effect waves-light white-text">
+                            Cancel
+                            <i class="fas fa-times right"></i>
+                        </a>
+                        <button class="btn waves-effect waves-light tooltipped" data-position="top"
+                            data-tooltip="Great! Recipe Upgrade Incoming!" type="submit">Update Recipe
+                            <i class="fas fa-edit"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
 
 {% endblock %}
