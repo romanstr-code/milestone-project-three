@@ -82,15 +82,22 @@ body {
     justify-content: center;
     position: relative;
 }
-
-.background-color-recipes{
-    color: gray;
-}
-
 .fa-angle-double-down {
     font-size: 5rem;
     color: rgb(87, 119, 87);
     cursor: pointer;
     padding-top: 45px;
     
+}
+/*. ADD RECIPE PAGE  .*/
+
+.background-color-recipes{
+    color: gray;
+}
+
+/*. EDIT RECIPE PAGE  .*/
+
+
+.background-color-edit_recipes {
+    color: gray;
 }
