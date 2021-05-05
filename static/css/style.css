@@ -67,3 +67,30 @@ body {
     background-image: radial-gradient(circle, #e5dcc5, #d8d1ba, #cbc7af, #bfbca4, #b2b29a, #a8a992, #9fa089, #959781, #8c8d79, #848371, #7b796a, #727062);
     height: 100%;
 }
+
+/* RECIPES PAGE */
+
+.recipes-page {
+    height: 70vh;
+    background: url("../images/home_page.jpg") no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.background-color-recipes{
+    color: gray;
+}
+
+.fa-angle-double-down {
+    font-size: 5rem;
+    color: rgb(87, 119, 87);
+    cursor: pointer;
+    padding-top: 45px;
+    
+}
