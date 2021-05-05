@@ -36,3 +36,27 @@ body {
     transform: translate(-50%, -50%);
     width: 70%;
 }
+
+/*. REGISTER PAGE  .*/
+
+.container-register {
+    background: url("../images/registerr.jpg") no-repeat bottom left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: dimgray;
+    display: flex;
+    height: 100vh;
+    object-fit: cover;
+    justify-content: center;
+    position: relative;
+}
+
+.register-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
