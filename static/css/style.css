@@ -2,7 +2,7 @@
 html,
 body {
     font-family: 'Nunito', sans-serif;
-    height: 100vh;
+    height: 100%;
 }
 
 /*. HOME PAGE  .*/
@@ -59,4 +59,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
+}
+
+/* PROFILE PAGE */
+
+.background-profile {
+    background-image: radial-gradient(circle, #e5dcc5, #d8d1ba, #cbc7af, #bfbca4, #b2b29a, #a8a992, #9fa089, #959781, #8c8d79, #848371, #7b796a, #727062);
+    height: 100%;
 }
