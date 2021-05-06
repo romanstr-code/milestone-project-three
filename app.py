@@ -41,6 +41,14 @@ def french_press():
         .sort("recipe_name"))
 
 
+@app.route("/siphon")
+def siphon():
+    return render_template(
+        "siphon.html",
+        recipes=mongo.db.recipes.find({"category_name": "Siphon Method"})
+        .sort("recipe_name"))
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
