@@ -101,3 +101,11 @@ body {
 .background-color-edit_recipes {
     color: gray;
 }
+
+
+/*. RECIPES/ INDIVIDUAL PAGES   .*/
+
+.collapsible {
+    font-size: 1rem;
+    color: #686237;
+}
