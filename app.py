@@ -49,6 +49,14 @@ def siphon():
         .sort("recipe_name"))
 
 
+@app.route("/turkish")
+def turkish():
+    return render_template(
+        "turkish.html",
+        recipes=mongo.db.recipes.find({"category_name": "Turkish Method"})
+        .sort("recipe_name"))
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
