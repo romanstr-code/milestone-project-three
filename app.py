@@ -65,6 +65,14 @@ def pour_over():
         .sort("recipe_name"))
 
 
+@app.route("/aeropress")
+def aeropress():
+    return render_template(
+        "aeropress.html",
+        recipes=mongo.db.recipes.find({"category_name": "Aeropress Method"})
+        .sort("recipe_name"))
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
