@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Page Section -->
+<section>
+    <div class="col s12">
+        <h2 class="center-align">Iced Coffee!</h2>
+    </div>
+    <!-- Page Container -->
+    <div class="container">
+        <!-- Recipe -->
+        {% for recipe in recipes %}
+        <div class="row">
+            <div class="col s12">
+                <!-- Recipe Image -->
+                <div class="card z-depth-3">
+                    <div class="card-image">
+                        <img class="materialboxed responsive-img" width="450" height="650" src="{{ recipe.url }}">
+                    </div>
+                </div>
+            </div>
+            <!-- Recipe Name -->
+            <div class="col s12">
+                <h3 class="center-align">{{ recipe.recipe_name }}</h3>
+            </div>
+            <!-- Ingridients -->
+            <div class="col s6">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header"><i class="fas fa-seedling"></i>Ingridients!</div>
+                        <div class="collapsible-body blue-grey lighten-3">
+                            <h4 class="center-align">What You Need:</h4>
+                            {% for list in recipe.ingridients.splitlines() %}
+                            <span>{{ list }}</span>
+                            {% endfor %}
+                            <br>
+                            <h6 class=" brown-text lighten-1">Created By:</h6>
+                            <span>{{ recipe.created_by }}</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Recipe Method of Making -->
+            <div class="col s6">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header"><i class="fas fa-shoe-prints"></i>Steps</div>
+                        <div class="collapsible-body blue-grey lighten-3">
+                            <h4 class="center-align">Follow The Steps:</h4>
+                            {% for list in recipe.method.splitlines() %}
+                            <span>{{ list }}</span>
+                            {% endfor %}
+                            <br>
+                            <h6 class=" brown-text lighten-1">Created By:</h6>
+                            <span>{{ recipe.created_by }}</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        {% endfor %}
+    </div>
+    <!-- Image Container -->
+    <section class="container ">
+        <div class="col container z-depth-3">
+            <!-- Slider Division -->
+            <div class="slider z-depth-5">
+                <ul class="slides">
+                    <li>
+                        <!--  image -->
+                        <img src="{{ url_for('static', filename='images/cold_coffee.jpg') }}">
+                    </li>
+                    <li>
+                        <!--  image -->
+                        <img src="{{ url_for('static', filename='images/cold_coffee1.jpg') }}">
+                    </li>
+                    <li>
+                        <!--  image -->
+                        <img src="{{ url_for('static', filename='images/cold_coffeee2.jpg') }}">
+                    </li>
+                    <li>
+                        <!--  image -->
+                        <img src="{{ url_for('static', filename='images/cold_coffeee3.jpg') }}">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Redirect to all recipes Division -->
+    <div class="col s12 m8">
+        <div class="row center-align">
+            <h4>Check Our Recipes!</h4>
+            <a class="btn-large center-align tooltipped" data-position="top" data-tooltip="All Recipes in Here!"
+                href="{{ url_for('recipes') }}"><i class="fas fa-door-open"></i> Enter!</a>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
