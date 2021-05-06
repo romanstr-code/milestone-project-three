@@ -57,6 +57,14 @@ def turkish():
         .sort("recipe_name"))
 
 
+@app.route("/pour_over")
+def pour_over():
+    return render_template(
+        "pour_over.html",
+        recipes=mongo.db.recipes.find({"category_name": "Pour Over Method"})
+        .sort("recipe_name"))
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
