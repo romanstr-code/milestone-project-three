@@ -73,6 +73,14 @@ def aeropress():
         .sort("recipe_name"))
 
 
+@app.route("/iced_coffee")
+def iced_coffee():
+    return render_template(
+        "iced_coffee.html",
+        recipes=mongo.db.recipes.find({"category_name": "Iced Method"})
+        .sort("recipe_name"))
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
