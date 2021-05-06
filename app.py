@@ -33,6 +33,14 @@ def recipes():
     return render_template("recipes.html", recipes=recipes)
 
 
+@app.route("/french_press")
+def french_press():
+    return render_template(
+        "french_press.html",
+        recipes=mongo.db.recipes.find({"category_name": "French Press"})
+        .sort("recipe_name"))
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
