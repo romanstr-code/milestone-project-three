@@ -18,8 +18,8 @@
             <li class="divider"></li>
             <li><a href="{{ url_for('french_press') }}">French Press</a></li>
             <li><a href="{{ url_for('siphon') }}">Siphon</a></li>
-            <li><a href="#!">Turkish</a></li>
-            <li><a href="#!">Pour Over</a></li>
+            <li><a href="{{ url_for('turkish') }}">Turkish</a></li>
+            <li><a href="{{ url_for('pour_over') }}">Pour Over</a></li>
             <li><a href="#!">Aeropress</a></li>
             <li><a href="#!">Iced Coffe</a></li>
         </ul>
@@ -45,22 +45,11 @@
             </ul>
          </div>
       </nav>
-      <!-- Dropdown Structure For Mobile -->
-        <ul id='dropdown2' class='dropdown-content'>
-            <li><a href="{{ url_for('recipes') }}">All Recipes</a></li>
-            <li class="divider"></li>
-            <li><a href="{{ url_for('french_press') }}">French Press</a></li>
-            <li><a href="{{ url_for('siphon') }}">Siphon</a></li>
-            <li><a href="#!">Turkish</a></li>
-            <li><a href="#!">Pour Over</a></li>
-            <li><a href="#!">Aeropress</a></li>
-            <li><a href="#!">Iced Coffe</a></li>
-        </ul>
       <!--mobile nav bar-->
       <ul class="sidenav" id="mobile-demo">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
          {% if session.user %}
-                    <li><a href="{{ url_for('recipes') }}" class="nav-item dropdown-trigger tooltipped" data-position="left" data-tooltip="Check Recipes" data-target="dropdown2">Recipes</a></li>
+                    <li><a href="{{ url_for('recipes') }}" class="nav-item">Recipes</a></li>
                     <li><a href="{{ url_for('add_recipe') }}" class="nav-item">Add Coffee Recipe</a></li>
                     <li><a href="{{ url_for('profile', username=session['user']) }}" class="nav-item">Profile</a></li>
                     <li><a href="{{ url_for('logout') }}" class="nav-item">Log Out</a></li>
