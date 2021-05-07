@@ -111,10 +111,10 @@ body {
     color: #686237;
 }
 
-/*. CONTACT US PAGE   .*/
+/*. ABOUT US PAGE   .*/
 
 #index-banner{
-    background-image: url("../images/pexels-tom-swinnen-1309778\ \(1\).jpg")   ;
+    background-image: url("../images/about_us.jpg")   ;
     display: grid;
     height: 100%;
     max-height: 100%;
@@ -126,7 +126,7 @@ body {
 
 
 
-/*. ABOUT US PAGE   .*/
+/*. CONTACT US PAGE   .*/
 
 .imagebg {
      background: url("../images/contact_us.jpg") no-repeat bottom left;
