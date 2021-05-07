@@ -26,13 +26,13 @@ mongo = PyMongo(app)
 def home():
     return render_template("home.html")
 
-
+# All Recipes Page
 @app.route("/recipes")
 def recipes():
     recipes = list(mongo.db.recipes.find())
     return render_template("recipes.html", recipes=recipes)
 
-
+# Individual Recipe Page
 @app.route("/french_press")
 def french_press():
     return render_template(
@@ -40,7 +40,7 @@ def french_press():
         recipes=mongo.db.recipes.find({"category_name": "French Press"})
         .sort("recipe_name"))
 
-
+# Individual Recipe Page
 @app.route("/siphon")
 def siphon():
     return render_template(
@@ -48,7 +48,7 @@ def siphon():
         recipes=mongo.db.recipes.find({"category_name": "Siphon Method"})
         .sort("recipe_name"))
 
-
+# Individual Recipe Page
 @app.route("/turkish")
 def turkish():
     return render_template(
@@ -56,7 +56,7 @@ def turkish():
         recipes=mongo.db.recipes.find({"category_name": "Turkish Method"})
         .sort("recipe_name"))
 
-
+# Individual Recipe Page
 @app.route("/pour_over")
 def pour_over():
     return render_template(
@@ -64,7 +64,7 @@ def pour_over():
         recipes=mongo.db.recipes.find({"category_name": "Pour Over Method"})
         .sort("recipe_name"))
 
-
+# Individual Recipe Page
 @app.route("/aeropress")
 def aeropress():
     return render_template(
@@ -72,7 +72,7 @@ def aeropress():
         recipes=mongo.db.recipes.find({"category_name": "Aeropress Method"})
         .sort("recipe_name"))
 
-
+# Individual Recipe Page
 @app.route("/iced_coffee")
 def iced_coffee():
     return render_template(
@@ -80,7 +80,7 @@ def iced_coffee():
         recipes=mongo.db.recipes.find({"category_name": "Iced Method"})
         .sort("recipe_name"))
 
-
+# Register Page 
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -104,7 +104,7 @@ def register():
         return redirect(url_for("profile", username=session["user"]))
     return render_template("register.html")
 
-
+# Log In Page
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -133,7 +133,7 @@ def login():
 
     return render_template("login.html")
 
-
+# User Profile Page
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     #grab the session user's username from db
@@ -145,7 +145,7 @@ def profile(username):
 
     return redirect(url_for("login"))
 
-
+# Log Session User Out Page
 @app.route("/logout")
 def logout():
     #remove user from session cookies
@@ -153,7 +153,7 @@ def logout():
     session.pop("user")
     return redirect("login")
 
-
+# Add Recipe Page
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
     # Send User Input to DB
@@ -173,7 +173,7 @@ def add_recipe():
 
     return render_template("add_recipe.html")
 
-
+# Edit Recipe Page
 @app.route("/edit_recipes/<recipes_id>", methods=["GET", "POST"])
 def edit_recipe(recipes_id):
     if request.method == "POST":
@@ -193,29 +193,29 @@ def edit_recipe(recipes_id):
     recipes = mongo.db.recipes.find_one({"_id": ObjectId(recipes_id)})
     return render_template("edit_recipe.html", recipes=recipes)
 
-
+# DeleteRecipe 
 @app.route("/delete_recipe/<recipes_id>")
 def delete_recipe(recipes_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipes_id)})
     flash("Deleted Permanently!")
     return redirect(url_for('recipes'))
 
-
+# Contact Page
 @app.route("/contact_us")
 def contact_us():
     return render_template("contact_us.html")
 
-
+# About Us Page
 @app.route("/about_us")
 def about_us():
     return render_template("about_us.html")
 
-
+# 404 Error Page
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template("404.html"), 404
 
-
+# 500 Server Error
 @app.errorhandler(500)
 def internal_server_error(e):
     return render_template("500.html"), 500
