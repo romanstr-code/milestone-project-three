@@ -10,6 +10,13 @@
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_0ocXRXn7VFJ7tCZmmuBK1");
+            })();
+        </script>
       <title>Coffee Show</title>
 
       <!-- Dropdown Structure -->
@@ -40,7 +47,7 @@
                     <li><a href="{{ url_for('login') }}" class="nav-item">Log In</a></li>
                     <li><a href="{{ url_for('register') }}" class="nav-item">Register</a></li>
                     <li><a href="#" class="nav-item">About Us</a></li>
-                    <li><a href="#" class="nav-item">Contact Us</a></li>
+                    <li><a href="{{ url_for('contact_us') }}" class="nav-item">Contact Us</a></li>
                {% endif %}
             </ul>
          </div>
@@ -57,7 +64,7 @@
                     <li><a href="{{ url_for('login') }}" class="nav-item">Log In</a></li>
                     <li><a href="{{ url_for('register') }}" class="nav-item">Register</a></li>
                     <li><a href="#" class="nav-item">About Us</a></li>
-                    <li><a href="#" class="nav-item">Contact Us</a></li>
+                    <li><a href="{{ url_for('contact_us') }}" class="nav-item">Contact Us</a></li>
                {% endif %}
       </ul>
       <!-- Flash messages -->
@@ -89,7 +96,8 @@
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6c6vXtzTBGL6gaYFSmZ0N6I09pjY6YWk&callback=initMap&libraries=&v=weekly"></script>      
-      <script src="{{ url_for('static', filename='js/script.js') }}"></script>  
+      <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+      <script src="{{ url_for('static', filename='js/sendEmail.js') }}"></script>
    </body>
    {% block scripts %}
     {% endblock %}
