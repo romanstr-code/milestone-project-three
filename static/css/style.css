@@ -10,6 +10,7 @@ body {
 
 .parallax-container {
     height: 600px;
+    
 
 }
 
@@ -111,6 +112,21 @@ body {
 }
 
 /*. CONTACT US PAGE   .*/
+
+#index-banner{
+    background-image: url("../images/pexels-tom-swinnen-1309778\ \(1\).jpg")   ;
+    display: grid;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 65vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/*. ABOUT US PAGE   .*/
 
 .imagebg {
      background: url("../images/contact_us.jpg") no-repeat bottom left;
