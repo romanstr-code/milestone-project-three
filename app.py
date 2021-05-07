@@ -207,8 +207,8 @@ def contact_us():
     return render_template("contact_us.html")
 
 
-@app.route("/about")
-def about():
+@app.route("/about_us")
+def about_us():
     return render_template("about_us.html")
 
 
