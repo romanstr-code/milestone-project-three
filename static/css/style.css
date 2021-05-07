@@ -15,7 +15,7 @@ body {
 
 /*. LOGIN PAGE  .*/
 
-.container-login {
+.container-login{
     background: url("../images/login.jpg") no-repeat bottom left;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -108,4 +108,23 @@ body {
 .collapsible {
     font-size: 1rem;
     color: #686237;
+}
+
+/*. CONTACT US PAGE   .*/
+
+.imagebg {
+     background: url("../images/contact_us.jpg") no-repeat bottom left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: dimgray;
+    display: flex;
+    height: 100vh;
+    object-fit: cover;
+    justify-content: center;
+    position: relative;
+}
+.page-container-form{
+    padding-top: 10%;
 }
