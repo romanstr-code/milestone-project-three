@@ -21,9 +21,10 @@
 <section class="brown lighten-4">
     <!-- Coffee Recipes -->
     {% if recipes|length > 0 %}
+    <!-- Recipes Container -->
     <div class="container ">
         <div class="row">
-        {% for recipes in recipes %}
+            {% for recipes in recipes %}
             <div class="col s12 m6 l4 up">
                 <div class="card recipe-card">
                     <div class="card-image waves-effect waves-block waves-light">
@@ -57,6 +58,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Content Reveal -->
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4"><strong>{{ recipes.recipe_name }}</strong>
                             <i class="fas fa-times right"></i>

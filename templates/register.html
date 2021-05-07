@@ -1,12 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
+
+<!-- Page Container -->
 <div class="container-register">
     <h3 class="center-align white-text">Register</h3>
     <section>
+        <!-- Form Container -->
         <div class="container">
             <div class="row">
+                <!-- Register Form -->
                 <form class="col register-form" method="POST" action="{{ url_for('register') }}">
                     <div class="card-panel ">
+                        <!-- Username -->
                         <div class="row">
                             <div class="input-field col s12">
                                 <i class="fas fa-user-plus prefix light-brown-text text-darken-4"></i>
@@ -15,6 +20,7 @@
                                 <label for="username">Username</label>
                             </div>
                         </div>
+                        <!-- Password -->
                         <div class="row">
                             <div class="input-field col s12">
                                 <i class="fas fa-user-lock prefix light-brown-text text-darken-4"></i>
@@ -23,12 +29,14 @@
                                 <label for="password">Password</label>
                             </div>
                         </div>
+                        <!-- Register  -->
                         <div class="row">
                             <button class="submit col s12 btn-large brown lighten-2 text-shadow">
                                 Register <i class="fas fa-sign-in-alt"></i>
                             </button>
                         </div>
                     </div>
+                    <!-- If Registered Redirect to Log In -->
                     <div class="row">
                         <div class="col s12">
                             <p class="center-align white-text">
@@ -38,11 +46,9 @@
                         </div>
                     </div>
                 </form>
+            </div>
+        </div>
     </section>
 </div>
-
-
-
-
 
 {% endblock %}

@@ -1,71 +1,80 @@
 {% extends "base.html" %}
 {% block content %}
+ <!-- Page Banner -->
+ <div class="section no-pad-bot" id="index-banner">
+     <!-- Banner Container -->
+     <div class="container">
+         <br><br>
+         <h1 class="header center orange-text">We Like Coffee!</h1>
+         <div class="row center">
+             <h5 class="header col s12 light white-text">We are happy to be in touch with you!</h5>
+         </div>
+         <!-- Contact Button Row -->
+         <div class="row center">
+             <a href="{{ url_for('contact_us') }}" id="download-button"
+                 class="waves-effect waves-light btn-large z-depth-5">Contact Us!</a>
+         </div>
+         <br><br>
+     </div>
+ </div>
+ <!-- About us Container -->
+ <div class="container">
+     <!-- About us Section -->
+     <div class="section">
+         <div class="row">
+             <div class="col s12 ">
+                 <h3 class="center-align">About Us!</h3>
+             </div>
+         </div>
+         <!--   Contecnt Row   -->
+         <div class="row">
+             <!-- How it Began Division -->
+             <div class="col s12 m4">
+                 <div class="icon-block">
+                     <h2 class="center orange-text lighten-1"><i class="fas fa-fast-backward"></i></h2>
+                     <h5 class="center">HOW IT ALL BEGAN</h5>
 
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">We Like Coffee!</h1>
-      <div class="row center">
-        <h5 class="header col s12 light white-text">We are happy to be in touch with you!</h5>
-      </div>
-      <div class="row center">
-        <a href="{{ url_for('contact_us') }}" id="download-button" class="waves-effect waves-light btn-large z-depth-5">Contact Us!</a>
-      </div>
-      <br><br>
+                     <p class="light">Our story goes back around 20 years.Armed with a passion for coffee, we had a
+                         vision to create The Best
+                         Brazilian Coffee Shop across Ireland. We started off simply trying to make a few local
+                         independent coffee houses
+                         work. And they did! We are 100% independent.Since opening we’ve been recognised and won twice
+                         in the Westside
+                         Restaurant and Bar Awards. Centrally located and inside the stunning surrounding of City
+                         Center, we are the perfect
+                         escape for those wanting Quality Coffee, signature cakes, lunch or a perfect place to meet up
+                         with friends ! </p>
+                 </div>
+             </div>
+             <!-- Quality/Consistency Division -->
+             <div class="col s12 m4">
+                 <div class="icon-block">
+                     <h2 class="center orange-text lighten-1"><i class="fas fa-user-check"></i></h2>
+                     <h5 class="center">QUALITY AND CONSISTENCY</h5>
 
-    </div>
-  </div>
+                     <p class="light">Making great coffee takes some doing. So we partnered with a small Brazilian Farm.
+                         We open our
+                         Roastery,and we developed special Blend Coffee that is exclusive just to 60MlsCoffee. Regularly
+                         we invent new Blends
+                         and impress our Coffee Shop Quests with new Coffee Sensations.</p>
+                 </div>
+             </div>
+             <!-- Our Roastery Division -->
+             <div class="col s12 m4">
+                 <div class="icon-block">
+                     <h2 class="center orange-text lighten-1"><i class="fas fa-warehouse"></i></h2>
+                     <h5 class="center">Our Roastery</h5>
 
-  
-
-  <div class="container">
-    <div class="section">
-        <div class="row">
-          <div class="col s12 ">
-              <h3 class="center-align">About Us!</h3>
-          </div>
-      </div>
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center orange-text lighten-1"><i class="fas fa-fast-backward"></i></h2>
-            <h5 class="center">HOW IT ALL BEGAN</h5>
-
-            <p class="light">Our story goes back around 20 years.Armed with a passion for coffee, we had a vision to create The Best
-                Brazilian Coffee Shop across Ireland. We started off simply trying to make a few local independent coffee houses
-                work. And they did! We are 100% independent.Since opening we’ve been recognised and won twice in the Westside
-                Restaurant and Bar Awards. Centrally located and inside the stunning surrounding of City Center, we are the perfect
-                escape for those wanting Quality Coffee, signature cakes, lunch or a perfect place to meet up with friends ! </p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center orange-text lighten-1"><i class="fas fa-user-check"></i></h2>
-            <h5 class="center">QUALITY AND CONSISTENCY</h5>
-
-            <p class="light">Making great coffee takes some doing. So we partnered with a small Brazilian Farm. We open our
-                Roastery,and we developed special Blend Coffee that is exclusive just to 60MlsCoffee. Regularly we invent new Blends
-                and impress our Coffee Shop Quests with new Coffee Sensations.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center orange-text lighten-1"><i class="fas fa-warehouse"></i></h2>
-            <h5 class="center">Our Roastery</h5>
-
-            <p class="light">Roasting coffee transforms the chemical and physical properties of green coffee beans into roasted
-                coffee products. The roasting process is what produces the characteristic flavor of coffee by causing the green
-                coffee beans to change in taste.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <br><br>
-  </div>
-
+                     <p class="light">Roasting coffee transforms the chemical and physical properties of green coffee
+                         beans into roasted
+                         coffee products. The roasting process is what produces the characteristic flavor of coffee by
+                         causing the green
+                         coffee beans to change in taste.</p>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <br><br>
+ </div>
 
 {% endblock %}
