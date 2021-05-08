@@ -1,52 +1,185 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<!-- Title  -->
+<!-- Description of Project -->
+<!-- Contents List  -->
+<!-- UX -->
+# *User Experience* (UX)
+### 1. <strong>User Stories</strong><br> 
+* - a. Guest User
+* - b. Registered User
 
-Welcome romanstr-code,
+## 2.<strong> Design</strong><br><hr>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+<strong>Framework</strong>
+* - Materialeze
+* - jQuery
+* - Flask
+<br>
 
-## Gitpod Reminders
+<strong>Colors used</strong>
+<!-- Short Color Description -->
+* - Colors
+- * i.<!-- colors goes here -->
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<!-- Icons Used for Project / Short Clear description -->
+<strong>Icons Used</strong>
+<!--Icon description  -->
 
-`python3 -m http.server`
+<strong>Typography</strong>
+<!-- Typography Description -->
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+<!-- Project Wireframes -->
+### <strong>Wireframes</strong><br><hr>
+<!-- Wireframes Goes Here -->
+<!--<h5 align="center"><img width="550" height="430" src="wireframes/"></h5>-->
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# Features<hr>
 
-A blue button should appear to click: _Make Public_,
+### ***Existing Features***
+<!-- Existing features goes here -->
+<!-- Accesible For All ->
+<!-- Have Access Just If Registered -->
+**Access Just After Registered**
+<!-- What registered quest can do after registered -->
 
-Another blue button should appear to click: _Open Browser_.
+# Technologies Used<hr>
+<!-- Here Goes Tech Used -->
+-  ### **Languages Used**
+<!-- FrameWorks/Libraries/Programs -->
+- ### **Frameworks, Libraries & Programs Used**
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<!-- Features Test  --->
+# Features Test<hr>
+<!-- Steps for Testing -->
+1. LogIn
+2. Register 
+3. Add Recipe
+4. Check Your Recipe
+5. Update Recipe
+6. Delete Your Recipe
 
-To log into the Heroku toolbelt CLI you can use:
 
-`heroku login -i`
+## More Testing <hr>
+<!-- After Registered -->
+<!-- Log In  -->
+<!-- Username/exist/no in db -->
+<!-- Flash Mesagges -->
+<!-- As non logged user access -->
 
-If you have Multi-Factor Authentication (MFA) enabled then use the API key that was generated for you at [Heroku](https://dashboard.heroku.com/account) as your password.
-This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
 
-## Updates Since The Instructional Video
+### As Guest <hr>
+<!-- What a Guest User will want to see / Fell / Travel -->
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### As a Logged Guest <hr>
+<!-- What a Logged Guest will Experience  -->
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+# Deployment 
+<!-- Deployment Steps -->
+- ## Requirements <hr>
+- * 1.Python3 to run the App
+- * 2.PIP for installation of what App Requirs
+- * 3.GitPod as IDE (<em>You can choose your favorite IDE</em>)
+- * 4.MongoDb -- MongoDb Atlas for DataBase
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- ###  *Deploy To Heroku* <hr>
+<h4>What will you need:</h4>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+* i. For Creating requirements.txt file --> Tap in terminal  `pip3 freeze --local > requirements.txt`.
+* ii. For Procfile --> Tap in terminal `echo web: python app.py > Procfile`.
+* iii. You need to --> Add, commit and push these to GitHub.
+* iv. Travel to Heroku Website.
+* v. Create New App and Name it close to what the name of the App is on GitHub.
+* vi. Choose region that is closest to you.
+* vii. Go to the Deploy tab and choose Github.
+* viii. Seach for current repository on what you want to work and connect.
+* ix. On Heroku settings, navigate to Config Vars.
+* x. You Need to set The following:<br><hr>
+`IP = 0.0.0.0`<br>
+`MONGO_DBNAME = [Name of MongoDB]` <br>
+`MONGO_URI = mongodb+srv://:@<Your_cluster_Password>-qtxun.mongodb.net/<Your_database_name>?retryWrites=true&w=majority`<br>
+`PORT = 5000`<br>
+`SECRET_KEY = [Secret key]`<br>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* xii. Back to Deploy Tab --> Deploy Branch --> Choose Master Branch.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- ###  *Set up MongoDB Data Base* <hr>
+- * 1. Travel to [mongoDB](https://www.mongodb.com/)
+- * 2. Set Up Free account.
+- * 3. Click on  Clusters and press Create new Cluster.
+- * 4. Select Starter Clusters and Create a Cluster.
+- * 5. Chose closest region to you.
+- * 6. Select the M0 Sandbox tier.
+- * 7. Add your cluster name.
+- * 8. Create Cluster.
+- * 9. Travel to Cluster and Click Collections.
+- * 10. Create the database name and then add Collection:
+- - *  a. Create Collection called: Categories:
+- - *  i.1.Categories: <br>
 
----
+            _id:<ObjectId>
+             category_name:<string>
 
-Happy coding!
+- - * i.2. Recipes:<br>
+
+            id:<ObjectId>
+            category_name:<string>
+            recipe_name:<string>
+            ingredients:<string>
+            method:<string>
+            created_by:<string>
+            url:<string>
+
+- - * i.3 Users:<br>
+
+            id:<ObjectId>
+            username:<string>
+            password:<string>
+- * 11. Click Overview
+- * 12. Click Connect Your Application
+- * 13. Copy full driver code example.
+- * 14. Paste It in your env, on the MONGO_URI (Do not forget to put your password and database name what you currently using.)
+- * 15. The following environment variables will need to be setup in your project:<br>
+`app.config["MONGO_DBNAME"] = "Your database name"`<br>
+`app.config["MONGO_URI"] = "The connection string, replace the password placeholder with your actual user password"`<br>
+`app.secret_key = "A long random hidden string"`<br>
+
+- ###  *Forking Project* <hr>
+
+- * Travel To Github.
+- * Chose the repository you want to fork.
+- * Click the fork button, located on the right hand side.
+- * Make the changes you want to the present Project.
+- * If you wish to merge your changes to the original project:
+     - * Press the pull request button from your forked repository.
+     - * Press the button new pull request.
+     - * Choose the branches you wish to merge.
+     - * Press the Create pull request button.
+
+- ###  *Clone Project* <hr>
+- 1. Navigate to GitHub main page Repository.
+- 2. Find Green Code button and click it.
+- 3. To clone the repository using `HTTPS `you need to pic `"Clone with HTTPS"`.
+- 4. Open the terminal
+- 5. Change your current working directory to a location you want cloned directory.
+- 6. Type <strong>`git clone`</strong> and then paste the `URL` you copied on step Nr3
+- 7. Press enter to create your local clone.
+
+
+<!-- Here Goes Credits -->
+
+# Credits
+
+<!-- Where codes come from -->
+### Code
+
+<!-- Content -->
+
+### Content
+<!-- Thank you Part -->
+### Acknowledgements
+
+#### My Mentor
+
+#### Code Institute
