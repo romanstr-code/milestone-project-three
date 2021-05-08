@@ -9,11 +9,11 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" >
+      <script  src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
         </script>
         <!-- Eamil Initialization Script -->
-        <script type="text/javascript">
+        <script>
             (function () {
                 emailjs.init("user_0ocXRXn7VFJ7tCZmmuBK1");
             })();
@@ -71,6 +71,7 @@
       </ul>
       <!-- Flash messages -->
     <section>
+        
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
@@ -79,7 +80,8 @@
                     </div>
                 {% endfor %}
             {% endif %}
-        {% endwith %}                
+        {% endwith %}   
+                   
     </section>
 
        <!--templates-->

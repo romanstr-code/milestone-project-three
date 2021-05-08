@@ -15,7 +15,7 @@
                 <!-- Recipe Image -->
                 <div class="card z-depth-3">
                     <div class="card-image">
-                        <img class="materialboxed responsive-img" width="450" height="650" src="{{ recipe.url }}">
+                        <img class="materialboxed responsive-img" width="450" height="650" src="{{ recipe.url }}" alt="Recipe Image">
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                     <h4 class="center-align white-text text-darken-4">French Press Brewing Method!</h4>
                     <div class="video-container z-depth-5">
                         <iframe width="853" height="480"
-                            src="{{ url_for('static', filename='video/french_press.mp4') }}" frameborder="0"
+                            src="{{ url_for('static', filename='video/french_press.mp4') }}" 
                             allowfullscreen></iframe>
                     </div>
                 </div>
