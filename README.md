@@ -181,7 +181,6 @@ From the beggining I didn't prioritize this Features but towards the end of the 
     - Used GitHub for Store my code.
 - - iii.[ideate](https://apps.apple.com/us/app/ideate-design-wireframe-ux/id1494036474)<br>
     - Used ideate to sketch Wireframes.<br>
-<br>
 - - iv.[HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)<br>
     - Used HTML as base for markup text.
 - - vi.[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)<br>
