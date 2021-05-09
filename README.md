@@ -1,8 +1,21 @@
+<!-- Milestone Project Nr 3 -->
+<h1 align="center">Code Institute Data Centric Development Milestone Project</h1>
 <!-- Title  -->
+
+**<h1 align="center">Coffee Show</h1>**<hr>
+
+<!-- Project Image -->
+<h1 align="center"><img src="UserGoals/CoffeeShow.png" width="80%"></h1>
+
 <!-- Description of Project -->
+<h3><strong><em>Coffee Show</em></strong> was inspired from the fact that what present reality is. All people that love coffee, should have the opportunity to make their loved drink themselves in home condition! As I am a coffee lover, working as a barista and like to experiment with coffee, I tried to simulate a website that are purely devoted to coffee and specifically to the simple steps you can follow, to achieve a cup of coffee home.,fast,easy and have a bit of fun.
+</h3>
+
 <!-- Contents List  -->
+
 <!-- UX -->
-# *User Experience* (UX)
+# *User Experience* (UI/UX)<hr>
+
 ### 1. <strong>User Stories</strong><br> 
 * - a. Guest User
 * - b. Registered User
@@ -59,7 +72,7 @@
 6. Delete Your Recipe
 
 
-## More Testing <hr>
+### More Testing <hr>
 <!-- After Registered -->
 <!-- Log In  -->
 <!-- Username/exist/no in db -->
@@ -75,7 +88,7 @@
 <!-- What a Logged Guest will Experience  -->
 
 
-# Deployment 
+# Deployment <hr>
 <!-- Deployment Steps -->
 - ## Requirements <hr>
 - * 1.Python3 to run the App
@@ -169,17 +182,17 @@
 
 <!-- Here Goes Credits -->
 
-# Credits
+# Credits<hr>
 
 <!-- Where codes come from -->
-### Code
+### Code<hr>
 
 <!-- Content -->
 
-### Content
+### Content<hr>
 <!-- Thank you Part -->
-### Acknowledgements
+### Acknowledgements<hr>
 
-#### My Mentor
+#### My Mentor<hr>
 
-#### Code Institute
+#### Code Institute<hr>
