@@ -1,5 +1,5 @@
 <!-- Milestone Project Nr 3 -->
-<h1 align="center">Code Institute Data Centric Development Milestone Project</h1>
+><h1 align="center">Code Institute Data Centric Development Milestone Project</h1>
 <!-- Title  -->
 
 **<h1 align="center">Coffee Show</h1>**<hr>
@@ -8,58 +8,214 @@
 <h1 align="center"><img src="UserGoals/CoffeeShow.png" width="80%"></h1>
 
 <!-- Description of Project -->
-<h3><strong><em>Coffee Show</em></strong> was inspired from the fact that what present reality is. All people that love coffee, should have the opportunity to make their loved drink themselves in home condition! As I am a coffee lover, working as a barista and like to experiment with coffee, I tried to simulate a website that are purely devoted to coffee and specifically to the simple steps you can follow, to achieve a cup of coffee home.,fast,easy and have a bit of fun.
-</h3>
+<h4><strong><em>Coffee Show</em></strong> was inspired from the fact that what present reality is. All people that love coffee, should have the opportunity to make their loved drink themselves in home condition! As I am a coffee lover, working as a barista and like to experiment with coffee, I tried to simulate a website that are purely devoted to coffee and specifically to the simple steps you can follow, to achieve a cup of coffee home.,fast,easy and have a bit of fun.
+</h4>
 
 <!-- Contents List  -->
 
 <!-- UX -->
 # *User Experience* (UI/UX)<hr>
+<h3>Project Goals</h3><hr>
 
-### 1. <strong>User Stories</strong><br> 
-* - a. Guest User
-* - b. Registered User
+[CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) Functionality:
+<ol>
+<li>Create</li>
+<li>Read</li>
+<li>Update</li>
+<li>Delete</li>
+</ol>
+<h4>This is Code Institute Data Centric Development module. Milestone Project 3.<br>
+<p><em>The main goal of the project is the CRUD Functionality. The purpose of this particular project are to target audience that love coffee and would like to know how they can make it in home condition. My own goal was to create a simple website, which will contain just the information about coffee, steps of how to prepare recipe. Plain, simple and straight-to-the-point recipes.</em></p>
+</h4>
 
+### 1. <strong>User Stories</strong><br> <hr>
+> #### Guest User :
+
+ - 1. As first time Traveler I would like to have a easy and smooth browse.
+ - 2. As first time Traveler I would like to know what Website is about.
+ - 3. As first time Traveler I would like to have a clean define Navigation bar.
+ - 4. As first time Traveler I would like to know more about who is behind this website.
+ - 5. As first time Traveler I would like know if I can contact them.
+ - 6. As first time Traveler I would like to register and login.<br>
+ - 7. As first time Traveler I would like to have access from all devices to my newly account.
+
+<hr>
+
+> #### Registered User!
+- 1. As a Registered User I would like to recieve a message if my registration went successfuly .
+ - 2. As a Registered User I would like to as well would like to have a welcome message each time I'm Logged into my account.
+ - 3. As a Registered User I would like to check all recipes.
+ - 4. As a Registered User I would like to **Create** my own recipe.
+ - 5. As a Registered User I would like to **Read** my own recipe.
+ - 6. As a Registered User I would like to **Edit** my recipe.
+ - 7. As a Registered User I would like to have opportunity to **Delete** my recipe.
+
+<hr>
+
+>  Developer Goals!
+- 1. Practice CRUD Functionality.
+- 2. Provide easy way of making homemade coffee.
+- 3. Easy way of Creating, Reading, Editing and Deleting recipes.
+- 4. Registration Functionality / LogIn Functionality / LogOut Functionality.
+- 5. Practice more newly learn skills Jinja Template / Python3 / Flask.
+- 6. Practice working with a database -> MongoDB.
+- 7. Practice newly learn Framework *Materialeze*.
+- 8. Improve JavaScript
+- 9. Improve jQuery
+- 10. Improve Creating clean code.
+- 11. Learn working with Heroku.
+
+<!-- DESIGN -->
 ## 2.<strong> Design</strong><br><hr>
+<!-- Inspiration For Design -->
+<strong>Inspiration:</strong><br>
 
-<strong>Framework</strong>
+<p>As I am very passionate about drinking, tasting and exploring everything related to coffee I start looking for existing coffee websites that are dedicated just to recipes and steps to follow. In this journey, I found little what I truly liked. My main idea then was, to be very simple, but in the same time to look appealing to visitor eys, to be easy to navigate and easier to understand how to follow the steps to make coffee. And for people who love coffee to be able to create fast and easy their own recipes, when they like to delete them or edit.
+</p>
+
+<strong>Frameworks Used:</strong>
+<p>
+In this project I choose to work with this Framework.
+</p>
+
 * - Materialeze
 * - jQuery
 * - Flask
 <br>
 
-<strong>Colors used</strong>
+<strong>Colors used:</strong>
 <!-- Short Color Description -->
-* - Colors
-- * i.<!-- colors goes here -->
+
+*  Colors
+
+* -  I chose to use Materialeze color for mostly all Project, which is (*#8d6e63 brown lighten-1*, #ffccbc deep-orange lighten-4, #ffffff white, #eeeeee grey lighten-3)
+* - On Profile page I choose to add a radial-gradient background image.
+* - For Buttons I used same Materialeze color for all (*waves-light*) wich take a green color.
+
 
 <!-- Icons Used for Project / Short Clear description -->
 <strong>Icons Used</strong>
 <!--Icon description  -->
 
+* - [Fontawesome](fontawesome.com)
+* - [Materialize](https://materializecss.com/icons.html)
+
 <strong>Typography</strong>
 <!-- Typography Description -->
 
+* - [GoogleFonts](https://fonts.google.com/)
+  - - On all webstie :  <em>'Nunito'</em>.
+  - - Backing up :  <em>sans-serif</em>.
+
 
 <!-- Project Wireframes -->
-### <strong>Wireframes</strong><br><hr>
+### <strong>Wireframes</strong><br>
 <!-- Wireframes Goes Here -->
-<!--<h5 align="center"><img width="550" height="430" src="wireframes/"></h5>-->
+<h5>HOME PAGE</h5>
+<h5 align="center"><img width="550" height="430" src="wireframes/all3devices.png"></h5>
 
 # Features<hr>
 
-### ***Existing Features***
+> ### Existing Features
+
 <!-- Existing features goes here -->
-<!-- Accesible For All ->
+**Visible for all Users :**<br>
+<!-- Accesible For All -->
+
+- **All User have access to Home page**.<br>
+On this page you are getting familiar with what website is about. You get a smooth transition on the page to a section which gives you a clear message to register and have access to all website recipes.<br>
+
+- **All User have access to LogIn Page**<br>
+The Log In Page is their first after Home page for the regular user to easy go an LogIn into his/her account.
+
+- **All User have access to Register Page**<br>
+The *Register* Page is right there after Log In. For users to get access to website they need to register. 
+
+- **All User have access to About Us Page**<br>
+This page is for users who want to know more about the website owners and who they are. To get a better understanding who is behind the website, who they are and why they do what they do.
+
+- **All User have access to Contact Us Page**<br>
+Contact Page is their for user to be able to be in touch, to add their remarks about the work they see or maybe for future collaborations.
+
+
 <!-- Have Access Just If Registered -->
-**Access Just After Registered**
+**Access Just After Registered :**
 <!-- What registered quest can do after registered -->
+- **Profile Page**
+All users that decide to register will have their own Profile.When getting there, it will be displayed two correct ways of pouring and two buttons to redirect them to two pages:<br>
+* 1. *All Recipes Page*
+* 2. *Add Recipe Page*
+- **All Recipes Page**
+On this page, you can check already existing recipes and what the steps for making them and with what kind of tools.
+- **Add Recipe Page**
+When arriving on this page user can add their won recipes.
+- **Read Recipe Page**
+After you submitted your recipe, you will be redirected to the all recipe page. There you can check your recipe. As well as :<br>
+* 1. *Edit*
+* 2. *Delete*
+- **Edit Recipe Page**
+You can easy edit your submitted recipe on the *Edit Recipe Page*
+- **Delete Recipe**<br>
+Easy delete your submitted recipe by click Delete.
+- **LogOut**<br>
+Lastly, user have opportunity to LoggOut from their account when they want.
+
+### `Feature Features left to impliment` <hr>
+From the beggining I didn't prioritize this Features but towards the end of the project was thinking more about this particular Features:<br>
+
+- - 1.Edit Profile
+- - 2.Delete Profile
+- - 3.Manage Categories.
+- - * *Add Category*
+- - * *Edit Category*
+- - * *Delete Category*
+
 
 # Technologies Used<hr>
 <!-- Here Goes Tech Used -->
--  ### **Languages Used**
-<!-- FrameWorks/Libraries/Programs -->
-- ### **Frameworks, Libraries & Programs Used**
+## Frameworks, Libraries/Programs, Languages 
+
+- - i.[GitPod](https://www.gitpod.io/)<br>
+    - Used GitPod for First choice as my ***IDE***
+- - ii.[GitHub](https://github.com/)<br>
+    - Used GitHub for Store my code.
+- - iii.[ideate](https://apps.apple.com/us/app/ideate-design-wireframe-ux/id1494036474)<br>
+    - Used ideate to sketch Wireframes.<br>
+<br>
+- - iv.[HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)<br>
+    - Used HTML as base for markup text.
+- - vi.[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)<br>
+    - Used as base for cascading styles.
+- - vii.[jQuery](https://jquery.com/)<br>
+    - jquery script for page Interactivity
+- - viii.[Materialeze](https://materializecss.com/)<br>
+    - Use Materialeze to simplify the structure of the website and make the website responsive.
+- - [EmailJs](https://www.emailjs.com/)<br> 
+    - EmailJs was used for contact us form for more Interactivity with user.
+- - [GoogleFonts](https://fonts.google.com/)<br>
+    - The project uses google fonts to style website fonts.
+- - [Font Awesome](https://fontawesome.com/)<br>
+    - The project uses fontawesome for adding icons and design purpose.
+- - ix.[Flask](https://flask.palletsprojects.com/en/1.1.x/quickstart/)<br>
+    - Used Flask as a microframework.
+- - x.[Jinja](https://jinja.palletsprojects.com/en/2.11.x/)<br>
+    - Used Jinja for templating with Flask.
+- - xi.[Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/)
+    - Used Werkzeug for password hashing, authentication and authorisation.
+- - xii.[Heroku](http://heroku.com/)<br>
+    - Used Heroku for App Hosting.
+- - xiii.[Python3](https://www.python.org/)<br>
+    - Used for Backend.
+- - xiv.[MongoDB](https://www.mongodb.com/)<br>
+    - Used MongoDB for DataBase.
+- - xv.[W3CValidator](https://validator.w3.org/)<br>
+    - Used For Testing.
+- - xvi.[W3CSSValidator](https://jigsaw.w3.org/css-validator/#validate_by_uri)<br>
+    - Used For Testing.
+- - xvii.[PEP8validator](http://pep8online.com/)<br>
+    - Used For PEP8 for best Practice.
+- - xviii.[JSHint](https://jshint.com)<br>
+    - Used JSHint for validate jQuery and JavaScript script.
 
 <!-- Features Test  --->
 # Features Test<hr>
@@ -80,23 +236,15 @@
 <!-- As non logged user access -->
 
 
-### As Guest <hr>
-<!-- What a Guest User will want to see / Fell / Travel -->
-
-
-### As a Logged Guest <hr>
-<!-- What a Logged Guest will Experience  -->
-
-
 # Deployment <hr>
 <!-- Deployment Steps -->
-- ## Requirements <hr>
+> ### Requirements <hr>
 - * 1.Python3 to run the App
 - * 2.PIP for installation of what App Requirs
 - * 3.GitPod as IDE (<em>You can choose your favorite IDE</em>)
 - * 4.MongoDb -- MongoDb Atlas for DataBase
 
-- ###  *Deploy To Heroku* <hr>
+> ###  *Deploy To Heroku* <hr>
 <h4>What will you need:</h4>
 
 * i. For Creating requirements.txt file --> Tap in terminal  `pip3 freeze --local > requirements.txt`.
@@ -117,7 +265,7 @@
 
 * xii. Back to Deploy Tab --> Deploy Branch --> Choose Master Branch.
 
-- ###  *Set up MongoDB Data Base* <hr>
+> ###  *Set up MongoDB Data Base* <hr>
 - * 1. Travel to [mongoDB](https://www.mongodb.com/)
 - * 2. Set Up Free account.
 - * 3. Click on  Clusters and press Create new Cluster.
@@ -158,7 +306,7 @@
 `app.config["MONGO_URI"] = "The connection string, replace the password placeholder with your actual user password"`<br>
 `app.secret_key = "A long random hidden string"`<br>
 
-- ###  *Forking Project* <hr>
+> ###  *Forking Project* <hr>
 
 - * Travel To Github.
 - * Chose the repository you want to fork.
@@ -170,7 +318,7 @@
      - * Choose the branches you wish to merge.
      - * Press the Create pull request button.
 
-- ###  *Clone Project* <hr>
+> ###  *Clone Project* <hr>
 - 1. Navigate to GitHub main page Repository.
 - 2. Find Green Code button and click it.
 - 3. To clone the repository using `HTTPS `you need to pic `"Clone with HTTPS"`.
