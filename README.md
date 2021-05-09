@@ -185,37 +185,37 @@ From the beggining I didn't prioritize this Features but towards the end of the 
 - - iv.[HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)<br>
     - Used HTML as base for markup text.
 - - vi.[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)<br>
-    - Used as base for cascading styles.
+    - Used as base for cascading styles.<br>
 - - vii.[jQuery](https://jquery.com/)<br>
-    - jquery script for page Interactivity
+    - jquery script for page Interactivity<br>
 - - viii.[Materialeze](https://materializecss.com/)<br>
-    - Use Materialeze to simplify the structure of the website and make the website responsive.
+    - Use Materialeze to simplify the structure of the website and make the website responsive.<br>
 - - [EmailJs](https://www.emailjs.com/)<br> 
-    - EmailJs was used for contact us form for more Interactivity with user.
+    - EmailJs was used for contact us form for more Interactivity with user.<br>
 - - [GoogleFonts](https://fonts.google.com/)<br>
-    - The project uses google fonts to style website fonts.
+    - The project uses google fonts to style website fonts.<br>
 - - [Font Awesome](https://fontawesome.com/)<br>
-    - The project uses fontawesome for adding icons and design purpose.
+    - The project uses fontawesome for adding icons and design purpose.<br>
 - - ix.[Flask](https://flask.palletsprojects.com/en/1.1.x/quickstart/)<br>
-    - Used Flask as a microframework.
+    - Used Flask as a microframework.<br>
 - - x.[Jinja](https://jinja.palletsprojects.com/en/2.11.x/)<br>
-    - Used Jinja for templating with Flask.
-- - xi.[Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/)
-    - Used Werkzeug for password hashing, authentication and authorisation.
+    - Used Jinja for templating with Flask.<br>
+- - xi.[Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/)<br>
+    - Used Werkzeug for password hashing, authentication and authorisation.<br>
 - - xii.[Heroku](http://heroku.com/)<br>
-    - Used Heroku for App Hosting.
+    - Used Heroku for App Hosting.<br>
 - - xiii.[Python3](https://www.python.org/)<br>
-    - Used for Backend.
+    - Used for Backend.<br>
 - - xiv.[MongoDB](https://www.mongodb.com/)<br>
-    - Used MongoDB for DataBase.
+    - Used MongoDB for DataBase.<br>
 - - xv.[W3CValidator](https://validator.w3.org/)<br>
-    - Used For Testing.
+    - Used For Testing.<br>
 - - xvi.[W3CSSValidator](https://jigsaw.w3.org/css-validator/#validate_by_uri)<br>
-    - Used For Testing.
+    - Used For Testing.<br>
 - - xvii.[PEP8validator](http://pep8online.com/)<br>
-    - Used For PEP8 for best Practice.
+    - Used For PEP8 for best Practice.<br>
 - - xviii.[JSHint](https://jshint.com)<br>
-    - Used JSHint for validate jQuery and JavaScript script.
+    - Used JSHint for validate jQuery and JavaScript script.<br>
 
 <!-- Features Test  --->
 # Features Test<hr>
