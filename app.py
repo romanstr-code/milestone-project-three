@@ -34,6 +34,7 @@ def recipes():
     return render_template("recipes.html", recipes=recipes)
 
 
+# Search Box
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")

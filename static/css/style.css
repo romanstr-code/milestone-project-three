@@ -72,7 +72,7 @@ body {
 /* RECIPES PAGE */
 
 .recipes-page {
-    height: 70vh;
+    height: 85vh;
     background: url("../images/home_page.jpg") no-repeat bottom right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
