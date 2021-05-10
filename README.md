@@ -119,6 +119,12 @@ In this project I choose to work with this Framework.
 <h5>HOME PAGE</h5>
 <h5 align="center"><img width="550" height="430" src="wireframes/all3devices.png"></h5>
 
+- [AllWireframes](https://github.com/romanstr-code/milestone-project-threee/tree/master/wireframes)
+- [Desktop](https://github.com/romanstr-code/milestone-project-threee/tree/master/wireframes/desktop)
+- [Tablet](https://github.com/romanstr-code/milestone-project-threee/tree/master/wireframes/tablet)
+- [Mobile](https://github.com/romanstr-code/milestone-project-threee/tree/master/wireframes/mobile)
+
+
 # Features<hr>
 
 > ### Existing Features
