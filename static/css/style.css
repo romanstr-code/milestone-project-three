@@ -144,3 +144,10 @@ body {
 .page-container-form{
     padding-top: 10%;
 }
+
+/*.  SEARCH BOX    .*/
+
+.search-form {
+    width: 90%;
+    padding-top: 2rem;
+}
