@@ -485,8 +485,7 @@ iv. Tested By Friends / Relatives / Work Colleagues
 - Want to thank My Mentor [Gerard McBride](https://www.linkedin.com/in/gerard-mcbride-586b32a4/) for being there and explaining the steps in a clear and easy way for me to understand. Great mentor.
 
 #### Code Institute<hr>
-<<<<<<< HEAD
+
  - Code Institute for hard work and for amazing push.
  I enjoy my journey with you guys although I know this is just the beggining and I have to study even harder.
-=======
->>>>>>> 63c184a1a2bcb5168c7c47255be7cf580ef6765b
+
