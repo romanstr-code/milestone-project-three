@@ -8,8 +8,8 @@
 <h1 align="center"><img src="UserGoals/CoffeeShow.png" width="80%"></h1>
 
 <!-- Description of Project -->
-<h4><strong><em>Coffee Show</em></strong> was inspired from the present reality, and that is with all the lockdowns, we all missed our cup of coffee from our loved caffee house. All people that love coffee, should have the opportunity to make their loved drink themselves in home condition! As I am a coffee lover, working as a barista and like to experiment with coffee, I tried to simulate a website that are purely devoted to coffee and specifically to the simple steps you can follow, to achieve a great cup of coffee home.Fast,easy and have a bit of fun.
-</h4>
+<strong><em>Coffee Show</em></strong> was inspired from the present reality, and that is with all the lockdowns, we all missed our cup of coffee from our loved caffee house. All people that love coffee, should have the opportunity to make their loved drink themselves in home condition! As I am a coffee lover, working as a barista and like to experiment with coffee, I tried to simulate a website that are purely devoted to coffee and specifically to the simple steps you can follow, to achieve a great cup of coffee home.Fast,easy and have a bit of fun.
+
 
 <!-- Contents List  -->
 
