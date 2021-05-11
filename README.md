@@ -8,7 +8,7 @@
 <h1 align="center"><img src="UserGoals/CoffeeShow.png" width="80%"></h1>
 
 <!-- Description of Project -->
-<h4><strong><em>Coffee Show</em></strong> was inspired from the fact that what present reality is. All people that love coffee, should have the opportunity to make their loved drink themselves in home condition! As I am a coffee lover, working as a barista and like to experiment with coffee, I tried to simulate a website that are purely devoted to coffee and specifically to the simple steps you can follow, to achieve a cup of coffee home.,fast,easy and have a bit of fun.
+<h4><strong><em>Coffee Show</em></strong> was inspired from the present reality, and that is with all the lockdowns, we all missed our cup of coffee from our loved caffee house. All people that love coffee, should have the opportunity to make their loved drink themselves in home condition! As I am a coffee lover, working as a barista and like to experiment with coffee, I tried to simulate a website that are purely devoted to coffee and specifically to the simple steps you can follow, to achieve a great cup of coffee home.Fast,easy and have a bit of fun.
 </h4>
 
 <!-- Contents List  -->
@@ -70,8 +70,7 @@
 <!-- Inspiration For Design -->
 <strong>Inspiration:</strong><br>
 
-<p>As I am very passionate about drinking, tasting and exploring everything related to coffee I start looking for existing coffee websites that are dedicated just to recipes and steps to follow. In this journey, I found little what I truly liked. My main idea then was, to be very simple, but in the same time to look appealing to visitor eys, to be easy to navigate and easier to understand how to follow the steps to make coffee. And for people who love coffee to be able to create fast and easy their own recipes, when they like to delete them or edit. As well, I portray the website without footer and just on the big devices to be able to have a dropdown list with each recipe individual page.
-</p>
+<p>As I am very passionate about drinking, tasting and exploring everything related to coffee I start looking for existing coffee websites that are dedicated just to recipes and steps to follow. In this journey, I found little what I truly liked. My main idea then was, to be very simple, but in the same time to look appealing to visitor eyes, to be easy to navigate and easier to understand how to follow the steps to make coffee. And for people who love coffee to be able to create fast and easy their own recipes, when they like, to delete them or edit. As well, I portray the website without footer and just on the big devices to be able to have a dropdown list with each recipe displayed on individual page. On small devices, to have acces to recipes from modal form wich appear when a image is tapped.
 
 <strong>Frameworks Used:</strong>
 <p>
@@ -116,13 +115,20 @@ In this project I choose to work with this Framework.
 <!-- Project Wireframes -->
 ### <strong>Wireframes</strong><br>
 <!-- Wireframes Goes Here -->
-<h5>HOME PAGE</h5>
+<h5 align="center">HOME PAGE</h5>
 <h5 align="center"><img width="550" height="430" src="wireframes/all3devices.png"></h5>
+
+<h5 align="center">ABOUT US PAGE</h5>
+<h5 align="center"><img width="650" height="430" src="wireframes/all3devicesaboutus.png"></h5>
 
 - [AllWireframes](https://github.com/romanstr-code/milestone-project-threee/tree/master/wireframes)
 - [Desktop](https://github.com/romanstr-code/milestone-project-threee/tree/master/wireframes/desktop)
 - [Tablet](https://github.com/romanstr-code/milestone-project-threee/tree/master/wireframes/tablet)
 - [Mobile](https://github.com/romanstr-code/milestone-project-threee/tree/master/wireframes/mobile)
+
+
+
+
 
 
 # Features<hr>
@@ -138,6 +144,7 @@ On this page you are getting familiar with what website is about. You get a smoo
 
 - **All User have access to LogIn Page**<br>
 The Log In Page is their first after Home page for the regular user to easy go an LogIn into his/her account.
+<h5 align="center"><img width="650" height="730" src="wireframes/desktop/logindesktop.png"></h5>
 
 - **All User have access to Register Page**<br>
 The *Register* Page is right there after Log In. For users to get access to website they need to register. 
@@ -147,7 +154,7 @@ This page is for users who want to know more about the website owners and who th
 
 - **All User have access to Contact Us Page**<br>
 Contact Page is their for user to be able to be in touch, to add their remarks about the work they see or maybe for future collaborations.
-
+<h5 align="center"><img width="550" height="430" src="wireframes/all3devicescontactus.png"></h5>
 
 <!-- Have Access Just If Registered -->
 **Access Just After Registered :**
@@ -160,10 +167,14 @@ All users that decide to register will have their own Profile.When getting there
 On this page, you can check already existing recipes and what the steps for making them and with what kind of tools.
 - **Add Recipe Page**
 When arriving on this page user can add their won recipes.
+
+<h5 align="center"><img width="650" height="630" src="wireframes/desktop/addrecipedesktop.png"></h5>
+
 - **Read Recipe Page**
 After you submitted your recipe, you will be redirected to the all recipe page. There you can check your recipe. As well as :<br>
 * 1. *Edit*
 * 2. *Delete*
+
 - **Edit Recipe Page**
 You can easy edit your submitted recipe on the *Edit Recipe Page*
 - **Delete Recipe**<br>
@@ -365,6 +376,14 @@ iii. **Viewed on Tablet** : <br>
 
 iv. Tested By Friends / Relatives / Work Colleagues
 
+### Links
+
+- Went through all websites links 
+- Checked Link connection on all forms
+- Checked Pages conections.
+- Buttons conections.
+
+
 ### **Kown Bugs**
 
 #### Desktop
@@ -379,6 +398,12 @@ iv. Tested By Friends / Relatives / Work Colleagues
 
 #### Mobile 
 - - Hard to read text on some pages.
+
+ #### CSS Issue
+  
+  * I found this particular [ERROR](https://www.sitepoint.com/community/t/css-validation-unknown-vendor-extensions/125616)  <strong>**UNKNOWN VENDOR EXTENSION**</strong>
+  - - I documented about this error and which I found out that I need to remove the part which is cousing the problem but it would not have any benefit (Work better,faster) to the website. If I would build this website for a client I would have to explain that there is nothing I can do about this since those errors will help support browser compatibility efforts.
+
 
 
 # Deployment <hr>
