@@ -1,5 +1,5 @@
 <!-- Milestone Project Nr 3 -->
-><h1 align="center">Code Institute Data Centric Development Milestone Project</h1>
+><h1 align="center">Code Institute Data Centric Development<br> Milestone Project Three</h1>
 <!-- Title  -->
 
 **<h1 align="center">Coffee Show</h1>**<hr>
