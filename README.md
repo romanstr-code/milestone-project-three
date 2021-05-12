@@ -506,6 +506,7 @@ iv. Tested By Friends / Relatives / Work Colleagues
 - * Most of the code was from [Materialize](https://materializecss.com/).
 - * Most [Python](https://www.python.org/) code was tooken from [Tim Nelson](https://github.com/TravelTimN) Lessons.
 - * JavaScript code for Recipes page was taken from [W3schools](https://www.w3schools.com)
+- * Recipes Modal Form was inspired from fellow collegue Amy Keedwell.
 
 ### Content<hr>
 - * Text was written by me.
